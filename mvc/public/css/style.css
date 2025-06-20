@@ -1,0 +1,162 @@
+/*Style general de la page*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #000;
+}
+
+body,
+html {
+  min-height: 100%;
+  width: 100%;
+}
+html {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-kerning: normal;
+  font-size: 16px;
+}
+
+body {
+  background-color: #f4f3f2;
+}
+
+main {
+  flex: 1;
+  margin: 0 48px 0 48px;
+}
+/*Interligne------------------------*/
+h1,
+h2 {
+  line-height: 1.15;
+}
+
+strong {
+  line-height: 1.35;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #f4f3f2;
+}
+
+/*rhythme vertical*/
+p,
+strong,
+textarea,
+button,
+table,
+label,
+input,
+a,
+h1,
+h2 {
+  margin-top: 24px;
+}
+
+/*Structure pour les éléments paragraphes, td et strong----*/
+
+table {
+  border-collapse: collapse;
+}
+
+strong,
+p,
+td {
+  max-width: 50ch;
+}
+
+/*Styling des tables*/
+
+td,
+th {
+  padding: 5px;
+  border: solid 1px black;
+}
+
+th {
+  background-color: lightgray;
+}
+
+/*Styling du header*/
+
+header {
+  background-color: #12055c;
+}
+header nav * {
+  color: #fff;
+}
+
+footer {
+  position: relative;
+  text-align: center;
+  margin-top: 48px;
+  padding: 5px;
+  background-color: lightgrey;
+}
+
+form {
+  display: flex;
+  flex-flow: column;
+}
+
+input,
+textarea {
+  max-width: 50ch;
+}
+
+.bouton,
+input[type="submit"] {
+  padding: 0.5em 0.65em;
+  background-color: #dedeff;
+  border-radius: 0.2em;
+  transition-delay: 0.05s;
+  max-width: max-content;
+  max-height: fit-content;
+  text-align: center;
+  cursor: pointer;
+  background-color: lightblue;
+  line-height: 1.35;
+}
+
+.bouton:not(.delete):hover,
+input[type="submit"]:hover {
+  color: white;
+  background-color: rgb(109, 148, 161);
+}
+
+td a {
+  text-decoration: underline;
+}
+
+.delete {
+  background-color: rgb(250, 85, 85);
+  border: dashed 1px red;
+  margin-bottom: 24px;
+}
+
+.delete:hover {
+  background-color: darkred;
+  color: white;
+}
+
+.logo {
+  font-size: 40px;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+
+.main-nav > ul {
+  display: flex;
+  padding: 1em;
+  gap: 20px;
+  list-style: none;
+}
